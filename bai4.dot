@@ -1,5 +1,5 @@
 graph G {
-    node [shape=circle];
+    node [shape=circle,width=.3,height=.3,fixedsize=true];
     
     a -- b [label="2"];
     a -- c [label="4"];
@@ -62,24 +62,24 @@ graph G {
     t -- z [label="8"];
     
     a [pos="0, 0!"];
-    b [pos="2, 2!"];
-    c [pos="2, 0!"];
-    d [pos="2, -2!"];
-    e [pos="4, 2!"];
-    f [pos="4, 0!"];
-    g [pos="4, -2!"];
-    h [pos="6, 4!"];
-    i [pos="6, 0!"];
-    j [pos="6, -2!"];
-    k [pos="8, -2!"];
-    l [pos="6, 2!"];
-    m [pos="8, 2!"];
-    n [pos="8, 0!"];
-    o [pos="10, 4!"];
-    p [pos="10, 2!"];
-    q [pos="10, 0!"];
-    r [pos="10, -2!"];
-    s [pos="12, 2!"];
-    t [pos="12, 0!"];
-    z [pos="14, 0!"]
+    b [pos="1, 1!"];
+    c [pos="1, 0!"];
+    d [pos="1, -1!"];
+    e [pos="2, 1!"];
+    f [pos="2, 0!"];
+    g [pos="2, -1!"];
+    h [pos="3, 2!"];
+    i [pos="3, 0!"];
+    j [pos="3, -1!"];
+    k [pos="4, -1!"];
+    l [pos="3, 1!"];
+    m [pos="4, 1!"];
+    n [pos="4, 0!"];
+    o [pos="5, 2!"];
+    p [pos="5, 1!"];
+    q [pos="5, 0!"];
+    r [pos="5, -1!"];
+    s [pos="6, 1!"];
+    t [pos="6, 0!"];
+    z [pos="7, 0!"]
 }
