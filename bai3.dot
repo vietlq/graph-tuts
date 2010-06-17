@@ -1,0 +1,22 @@
+graph G {
+    node [shape=circle];
+    
+    a -- b [label="4"];
+    a -- c [label="3"];
+    
+    b -- c [label="2"];
+    b -- d [label="5"];
+    
+    c -- d [label="3"];
+    c -- e [label="6"];
+    
+    d -- e [label="1"];
+    d -- f [label="5"];
+    
+    e -- g [label="5"];
+    
+    f -- g [label="2"];
+    f -- z [label="7"];
+    
+    g -- z [label="4"];
+}
