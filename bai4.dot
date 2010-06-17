@@ -22,7 +22,7 @@ graph G {
     f -- j [label="4"];
     
     h -- l [label="1"];
-    h -- o [label="8", length="6"];
+    h -- o [label="8"];
     
     i -- j [label="3"];
     i -- l [label="3"];
