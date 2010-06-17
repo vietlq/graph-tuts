@@ -1,0 +1,85 @@
+graph G {
+    node [shape=circle];
+    
+    a -- b [label="2"];
+    a -- c [label="4"];
+    a -- d [label="1"];
+    
+    b -- c [label="3"];
+    b -- e [label="1"];
+    
+    c -- e [label="2"];
+    c -- f [label="2"];
+    
+    d -- f [label="5"];
+    d -- g [label="4"];
+    
+    e -- h [label="3"];
+    
+    f -- g [label="3"];
+    f -- h [label="3"];
+    f -- i [label="2"];
+    f -- j [label="4"];
+    
+    h -- l [label="1"];
+    h -- o [label="8", length="6"];
+    
+    i -- j [label="3"];
+    i -- l [label="3"];
+    i -- m [label="2"];
+    
+    j -- k [label="6"];
+    j -- m [label="6"];
+    j -- n [label="3"];
+    
+    k -- n [label="4"];
+    k -- r [label="2"];
+    
+    l -- m [label="3"];
+    l -- o [label="6"];
+    
+    m -- n [label="5"];
+    m -- o [label="4"];
+    m -- p [label="2"];
+    
+    n -- q [label="2"];
+    n -- r [label="1"];
+    
+    o -- p [label="2"];
+    o -- s [label="6"];
+    
+    p -- q [label="1"];
+    p -- s [label="2"];
+    p -- t [label="1"];
+    
+    q -- t [label="3"];
+    q -- r [label="8"];
+    
+    r -- t [label="5"];
+    
+    s -- z [label="2"];
+    
+    t -- z [label="8"];
+    
+    a [pos="0, 0!"];
+    b [pos="2, 2!"];
+    c [pos="2, 0!"];
+    d [pos="2, -2!"];
+    e [pos="4, 2!"];
+    f [pos="4, 0!"];
+    g [pos="4, -2!"];
+    h [pos="6, 4!"];
+    i [pos="6, 0!"];
+    j [pos="6, -2!"];
+    k [pos="8, -2!"];
+    l [pos="6, 2!"];
+    m [pos="8, 2!"];
+    n [pos="8, 0!"];
+    o [pos="10, 4!"];
+    p [pos="10, 2!"];
+    q [pos="10, 0!"];
+    r [pos="10, -2!"];
+    s [pos="12, 2!"];
+    t [pos="12, 0!"];
+    z [pos="14, 0!"]
+}
