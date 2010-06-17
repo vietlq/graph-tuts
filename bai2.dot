@@ -1,40 +1,12 @@
-digraph dtree {
-    node [fontsize=10, shape=box];
-
-    age [label=Age, style=filled, fillcolor=grey89];
-    age1 [label="< 18n---------n2-will buy/1-won't buy", shape=plaintext];
-    age2 [label="18 - 35n---------n0-will buy/4-won't buy", shape=plaintext];
-    age3 [label="36 - 55n---------n5-will buy/3-won't buy", shape=plaintext];
-    age4 [label="> 55n---------n5-will buy/0-won't buy", shape=plaintext];
-    income [label=Income, style=filled, fillcolor=grey89, pos="111,170"];
-    high [label="highn---------n0-will buy/1-won't buy", shape=plaintext];
-    low [label="lown---------n2-will buy/0-won't buy", shape=plaintext];
-    no1 [label="Won't Buy", style=filled, fillcolor=burlywood];
-    yes1 [label="Will Buy", style=filled, fillcolor=burlywood];
-    no2 [label="Won't Buy", style=filled, fillcolor=burlywood];
-    marital_status [label="Marital Status", style=filled, fillcolor=grey89];
-    yes2 [label="Will Buy", style=filled, fillcolor=burlywood];
-    married [label="Marriedn----------n0-will buy/3-won't buy",
-             shape=plaintext];
-    single [label="Singlen----------n5-will buy/0-won't buy",
-            shape=plaintext];
-    no3 [label="Won't Buy", style=filled, fillcolor=burlywood];
-    yes3 [label="Will Buy", style=filled, fillcolor=burlywood];
-
-    age -> age1 [arrowhead=none];
-    age -> age2 [arrowhead=none];
-    age -> age3 [arrowhead=none];
-    age -> age4 [arrowhead=none];
-    age1 -> income [arrowhead=none];
-    income -> high [arrowhead=none];
-    income -> low [arrowhead=none];
-    high -> no1 [arrowhead=none];
-    low -> yes1 [arrowhead=none];
-    age2 -> no2 [arrowhead=none];
-    age3 -> marital_status [arrowhead=none];
-    age4 -> yes2 [arrowhead=none];
-    marital_status -> married [arrowhead=none];
-    marital_status -> single [arrowhead=none];
-    married -> no3 [arrowhead=none];
-    single -> yes3 [arrowhead=none];
+graph G {
+    node [shape=circle];
+    
+    a -- b [label="2"];
+    a -- c [label="3"];
+    b -- d [label="4"];
+    b -- e [label="3"];
+    c -- e [label="5"];
+    d -- e [label="1"];
+    d -- z [label="2"];
+    e -- z [label="4"];
 }
