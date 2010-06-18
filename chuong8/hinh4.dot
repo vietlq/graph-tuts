@@ -11,7 +11,7 @@ digraph G {
     "Washington" [pos="6,-.7!", labelloc="b"];
     "New York" [pos="7,1.2!", labelloc="t"];
     
-    node [shape=circle,width=.2,height=.2,fixedsize=true,fillcolor="black",fontsize="1"];
+    node [shape=point,width=.1,height=.1,fixedsize=true,fillcolor="black",fontsize="1"];
     
     edge [arrowsize=0.5];
     

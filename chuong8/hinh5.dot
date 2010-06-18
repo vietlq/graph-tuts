@@ -1,7 +1,7 @@
-/* Trang 536 */
-/* Hinh 1 */
+/* Trang 538 */
+/* Hinh 5 */
 
-graph G {
+digraph G {
     node [shape=plaintext,width=.1,height=.1,fixedsize=false,fillcolor="black"];
     "San Francisco" [pos="0,.2!", labelloc="t"];
     "Los Angeles" [pos="1,-1.2!", labelloc="b"];
@@ -13,6 +13,8 @@ graph G {
     
     node [shape=point,width=.1,height=.1,fixedsize=true,fillcolor="black",fontsize="1"];
     
+    edge [arrowsize=0.5];
+    
     "San Francisco__" [pos="0,0!", labelloc="t", fontcolor="white"];
     "Los Angeles__" [pos="1,-1!", labelloc="b", fontcolor="white"];
     "Denver__" [pos="2,0.3!", labelloc="b", fontcolor="white"];
@@ -21,17 +23,20 @@ graph G {
     "Washington__" [pos="6,-.5!", labelloc="b", fontcolor="white"];
     "New York__" [pos="7,1!", labelloc="t", fontcolor="white"];
     
-    "San Francisco__" -- "Los Angeles__";
-    "San Francisco__" -- "Denver__";
+    "San Francisco__" -> "Los Angeles__" -> "San Francisco__";
+    "San Francisco__" -> "Denver__" -> "San Francisco__" -> "Denver__";
     
-    "Los Angeles__" -- "Denver__";
+    "Los Angeles__" -> "Denver__" -> "Los Angeles__";
     
-    "Denver__" -- "Chicago__";
+    "Denver__" -> "Chicago__" -> "Denver__" -> "Chicago__" -> "Denver__";
     
-    "Chicago__" -- "Detroit__";
-    "Chicago__" -- "New York__";
-    "Chicago__" -- "Washington__";
+    "Chicago__" -> "Detroit__";
+    "Chicago__" -> "New York__";
+    "Chicago__" -> "New York__";
+    "Chicago__" -> "Washington__" -> "Chicago__";
     
-    "New York__" -- "Detroit__";
-    "New York__" -- "Washington__";
+    "Detroit__" -> "New York__";
+    
+    "Washington__" -> "New York__";
+    "Washington__" -> "New York__";
 }

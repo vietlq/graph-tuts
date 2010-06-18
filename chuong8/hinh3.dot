@@ -11,7 +11,7 @@ graph G {
     "Washington" [pos="6,-.7!", labelloc="b"];
     "New York" [pos="7,1.2!", labelloc="t"];
     
-    node [shape=circle,width=.1,height=.1,fixedsize=true,fillcolor="black"];
+    node [shape=point,width=.1,height=.1,fixedsize=true,fillcolor="black",fontsize="1"];
     
     "San Francisco__" [pos="0,0!", labelloc="t", fontcolor="white"];
     "Los Angeles__" [pos="1,-1!", labelloc="b", fontcolor="white"];
