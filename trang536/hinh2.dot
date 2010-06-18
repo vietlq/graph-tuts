@@ -2,32 +2,41 @@
 /* Hinh 2 */
 
 graph G {
-    node [shape=plaintext,width=.3,height=.3,fixedsize=false];
+    node [shape=plaintext,width=.1,height=.1,fixedsize=false,fillcolor="black"];
+    "San Francisco" [pos="0,.2!", labelloc="t"];
+    "Los Angeles" [pos="1,-1.2!", labelloc="b"];
+    "Denver" [pos="2,0.7!", labelloc="b"];
+    "Chicago" [pos="4,0.1!", labelloc="t"];
+    "Detroit" [pos="5,1.7!", labelloc="t"];
+    "Washington" [pos="6,-.7!", labelloc="b"];
+    "New York" [pos="7,1.2!", labelloc="t"];
     
-    "San Francisco" [pos="0,0!"];
-    "Los Angeles" [pos="1,-1!"];
-    "Denver" [pos="2,0.3!"];
-    "Chicago" [pos="4,0.5!"];
-    "Detroit" [pos="5,1.5!"];
-    "Washington" [pos="6,-.5!"];
-    "New York" [pos="7,1!"];
+    node [shape=circle,width=.1,height=.1,fixedsize=true,fillcolor="black"];
     
-    "San Francisco" -- "Los Angeles";
-    "San Francisco" -- "Denver";
+    "San Francisco__" [pos="0,0!", labelloc="t", fontcolor="white"];
+    "Los Angeles__" [pos="1,-1!", labelloc="b", fontcolor="white"];
+    "Denver__" [pos="2,0.3!", labelloc="b", fontcolor="white"];
+    "Chicago__" [pos="4,0.5!", labelloc="t", fontcolor="white"];
+    "Detroit__" [pos="5,1.5!", labelloc="t", fontcolor="white"];
+    "Washington__" [pos="6,-.5!", labelloc="b", fontcolor="white"];
+    "New York__" [pos="7,1!", labelloc="t", fontcolor="white"];
     
-    "Los Angeles" -- "Denver";
-    "Los Angeles" -- "Denver";
+    "San Francisco__" -- "Los Angeles__";
+    "San Francisco__" -- "Denver__";
     
-    "Denver" -- "Chicago";
-    "Denver" -- "Chicago";
-    "Denver" -- "Chicago";
+    "Los Angeles__" -- "Denver__";
+    "Los Angeles__" -- "Denver__";
     
-    "Chicago" -- "Detroit";
-    "Chicago" -- "New York";
-    "Chicago" -- "New York";
-    "Chicago" -- "Washington";
+    "Denver__" -- "Chicago__";
+    "Denver__" -- "Chicago__";
+    "Denver__" -- "Chicago__";
     
-    "New York" -- "Detroit";
-    "New York" -- "Washington";
-    "New York" -- "Washington";
+    "Chicago__" -- "Detroit__";
+    "Chicago__" -- "New York__";
+    "Chicago__" -- "New York__";
+    "Chicago__" -- "Washington__";
+    
+    "New York__" -- "Detroit__";
+    "New York__" -- "Washington__";
+    "New York__" -- "Washington__";
 }
