@@ -1,0 +1,33 @@
+/* Trang 536 */
+/* Hinh 2 */
+
+graph G {
+    node [shape=plaintext,width=.3,height=.3,fixedsize=false];
+    
+    "San Francisco" [pos="0,0!"];
+    "Los Angeles" [pos="1,-1!"];
+    "Denver" [pos="2,0.3!"];
+    "Chicago" [pos="4,0.5!"];
+    "Detroit" [pos="5,1.5!"];
+    "Washington" [pos="6,-.5!"];
+    "New York" [pos="7,1!"];
+    
+    "San Francisco" -- "Los Angeles";
+    "San Francisco" -- "Denver";
+    
+    "Los Angeles" -- "Denver";
+    "Los Angeles" -- "Denver";
+    
+    "Denver" -- "Chicago";
+    "Denver" -- "Chicago";
+    "Denver" -- "Chicago";
+    
+    "Chicago" -- "Detroit";
+    "Chicago" -- "New York";
+    "Chicago" -- "New York";
+    "Chicago" -- "Washington";
+    
+    "New York" -- "Detroit";
+    "New York" -- "Washington";
+    "New York" -- "Washington";
+}
